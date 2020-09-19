@@ -1,0 +1,527 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+#container{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+
+
+
+
+
+
+
+
+
+nav{
+	width:100%;
+	height:auto;/*si es responsivo crea un pequeño espaco*/
+	overflow:hidden;
+	background-color: #FFFFFF;
+	/*position:fixed;*/
+	z-index:100;
+    /*background-size: cover;*/
+}
+.head_menu{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	position:fixed;
+	z-index:5000;
+	bottom:0;
+	box-shadow:5px 24px 40px;
+	/*position:fixed;
+	z-index:1000;
+	top:0;*/
+}
+
+.menu{
+	width:210px;
+	padding:10px 0px;
+	float:left;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align:center;
+	color:#e97817;
+	/*padding-left:50px;*/
+	/*padding-right:190px;*/
+	font-size:x-large;
+	margin-left:60px;
+	padding-top:20px;
+}
+.menu:hover{
+	text-decoration:underline;
+}
+/*#coti{
+	width:160px;
+	padding:40px 0px;
+	float:left;
+	font-family:verdana;
+	text-align:center;
+	color:#f18400;
+	/*padding-left:50px;
+	padding-right:190px;
+	font-size:x-large;
+}*/
+
+ul{
+		list-style:none;
+		/*margin-left:25%;*/
+		width:100%;
+		height:auto;
+		overflow:hidden;
+		padding-left:60px;
+}
+a{
+	text-decoration:none;
+}
+/*@media screen and (max-width:1000px){
+
+/*nav{
+	background-image:none;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#slider{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	text-align:center;
+
+}
+#transparencia{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	background-image: url(../images/edificio.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: top;
+	text-align:center;
+	
+}
+
+
+@font-face{/*poner aca el nombre de la fuente, para incrustar el tipo de letra*/
+	font-family:DMSerifText-Regular;
+	src:url(../fonts/DMSerifText-Regular.ttf);
+}
+@font-face{/*poner aca el nombre de la fuente, para incrustar el tipo de letra*/
+	font-family:Roboto-Thin;
+	src:url(../fonts/Roboto-Thin.ttf);
+}
+#ppp{
+	font-family: Roboto-Thin;
+	text-align:left;
+	color:rgba(255,255,255,1.00);
+	font-size:30px;
+	}
+	#pppp{
+	font-family: DMSerifText-Regular;
+	text-align: center;
+	color:rgba(255,255,255,0.80);
+	font-size:50px;
+
+	text-align:center;
+
+
+
+	}
+#lob{
+	font-family:DMSerifText-Regular;
+	text-align:left;
+	color:rgba(255,255,255,1.00);
+	font-size:60px;
+	}
+#pp{
+	font-family:Roboto-Thin;
+	text-align:left;
+	color: #db9600;
+	font-size:30px;}
+
+#transparencia .box1{
+	display:inline-block;
+	vertical-align: top;
+}
+#titulo{
+	width:50%;
+	height:auto;
+	background-color: rgba(28,23,71,0.57);
+	padding-left:6%;
+	padding-bottom:10%;
+	padding-top:5%;
+	}
+.box1{
+	width:35%;
+	height:auto;
+	overflow:hidden;
+
+
+}
+.formulario1{
+	width:90%;/*PARA QUE NO ABARQUE TODO SOLO 70% PERO ESTO NO APLICA A LAS CAJAS*/
+	margin:auto;
+	display:block;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:#a38e7a;
+	/*padding:20px;*/
+	padding-top:20px;
+	
+}
+#contacto1 .formulario1{
+	display:inline-block;
+	vertical-align: top;
+}
+#cent1{
+	text-align:center;
+	vertical-align:central;
+	
+}
+#nom1{
+	width:70%;
+
+	text-align:left;
+	
+}
+#formulario2{
+	padding-top:20%;
+	padding-bottom:5%;
+
+	}
+@media screen and (min-width:700px) {
+	.box1{
+	width:49%;
+	height:auto;
+	overflow:hidden;
+	margin:2px;}
+}
+@media screen and (min-width:700px){
+	#transparencia{
+		background-image:url(../images/ipad.png)}}
+#logos{
+	width:130%;
+	height:auto;
+	padding-right:280px;}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#encabezado{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	text-align:center;
+	padding-top:70px;
+	margin:auto;
+}
+#dip{
+	width:200px;
+	text-align:center;
+	padding-top:60px;
+}
+.encabezados{
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:#ab8f79;
+	font-size:30px;
+}
+.aumentar {
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+
+}
+.aumentar:hover {
+-moz-transform: scale(1.4);
+-webkit-transform: scale(1.4);
+text-decoration: none;
+z-index:2;/*ayuda a que la imganes se coloque delante de los elementos*/
+}
+
+
+
+
+
+
+
+#section1{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background-color:#FFFFFF;
+	text-align:center;
+}
+#section1 img{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+#section1 .box{
+	display:inline-block;
+	vertical-align: top;
+	margin:40px;
+}
+.box{
+	width:350px;
+	height:auto;
+	overflow:hidden;
+	/*border:dotted 2px #FFF;*/
+	/*float:left;*/
+	margin:30px;
+	padding:5px;
+/*	padding-top:10px;*/
+	padding-bottom:5%;
+}
+@media screen and (min-width:700px){
+	
+}
+}}
+	
+#section1 .box img{
+	width:300px;
+	height:200px;
+	padding-bottom:20px;
+}
+#section1 h2{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size:30px;
+	color:#ef7510;
+	padding-top:15%;
+	text-align:left;
+	font-weight: lighter;
+}
+#section1 p{
+	font-family: Karla-Regular;
+	font-size:35px;
+	color:#a38e7a;
+	text-align: left;
+	font-weight: bold;
+}
+
+.subtitle {
+	font-family: Karla-Regular;
+	font-size:18px;
+	color:black;
+	text-align: left;
+	padding-bottom:20px;
+}
+
+
+
+
+
+
+
+
+
+#contacto{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	text-align:center;
+	margin-bottom:10vh;
+	background-image:url(../images/formu.png);
+	background-position:center;
+	background-repeat:no-repeat;
+		padding-bottom:10%;
+		background-size:cover;
+}
+
+label{
+	display:block;
+	margin-top:10px;
+	letter-spacing:1px;
+}
+.formulario{
+	width:90%;/*PARA QUE NO ABARQUE TODO SOLO 70% PERO ESTO NO APLICA A LAS CAJAS*/
+	margin:auto;
+	display:block;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:#a38e7a;
+	/*padding:20px;*/
+	padding-top:20px;
+	
+}
+#contacto .formulario{
+	display:inline-block;
+	vertical-align: top;
+}
+#cent{
+	text-align:center;
+	vertical-align:central;
+	
+}
+#nom{
+	width:5%;
+	margin-right:5px;
+	text-align:left;
+	
+}
+
+
+form{
+	width:90%;/*PARA QUE DEJE 5%A LA IZQUIERDA Y LA DERECHA/*
+	/*background-color:#990;*/
+	margin:auto;
+}
+select, textarea{
+	width:100%;/*CAMBIAR ESTO PERO TODAVIA FALTA CAMBIAR FORM, PONER 100% PARA QUE SE ACOMODE TODO LO ANCHO*/
+/*	height:15px;*/
+	background-color:#FFF;
+	border:solid 2px #FFF;
+	border-radius:8px;
+	padding:15px;
+	margin-top:15px;
+	font-size:20px;
+	color:#333;
+	font-family:Karla-Regular;
+	color:rgba(239,133,15,1.00);
+
+}
+option{
+	color:rgba(68,68,68,1.00);
+	width:20%;}
+input, textarea{
+	width:100%;/*CAMBIAR ESTO PERO TODAVIA FALTA CAMBIAR FORM, PONER 100% PARA QUE SE ACOMODE TODO LO ANCHO*/
+	height:5px;
+	background-color:#FFF;
+	border:solid 2px #FFF;
+	border-radius:8px;
+	padding:15px;
+	margin-top:15px;
+	font-size:20px;
+	color:#333;
+	font-family:Karla-Regular;
+
+}
+textarea{
+	height:200px;
+	
+}
+#boton{
+	width:120px;
+	height:65px;
+	border:none;
+	margin-top:35px;
+	cursor:pointer;
+	background-color:#e97817;
+	color:rgba(255,255,255,1.00);
+
+	
+}
+#contacto p{
+	font-family:Karla-Bold;
+	font-size:xx-large;
+
+	padding-top:10%;
+	color:#e97817;
+}
+#boton:hover{
+	background-color:#f18400;
+}
+
+
+
+
+
+
+
+
+
+#section2{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background-color:#FFFFFF;
+	text-align:center;
+	background-image:url(../images/background.png);
+	padding-top:30px;
+	text-align:center;}
+}
+#section2 img{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+#section2 .box2{
+	display:inline-block;
+	vertical-align:middle;
+}
+.box2{
+	width:500px;
+	height:auto;
+	overflow:hidden;
+	/*border:dotted 2px #FFF;*/
+	/*float:left;*/
+
+	padding:5px;
+/*	padding-top:10px;*/
+	padding-bottom:100px;
+}
+#section2 .box2 img{
+	width:200px;
+	height:200px;
+	padding-bottom:20px;
+}
+#section2 h2{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size:25px;
+	color:#ef7510;
+	text-align:center;
+}
+#section2 p{
+	font-family: Karla-Regular;
+	font-size:25px;
+	color:#FFFFFF;
+	text-align: ;
+	padding-bottom:20px;
+	
+}
+#color{
+	color:#ff6e00;}
+	#color:hover{
+		text-decoration:underline;}
+
+	
+	
+.menu{
+			width:260px; /*modificar*/
+		}
+	
+	
