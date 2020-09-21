@@ -3,6 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
+$dbname ="upri";
 
 //Variables enviados del archivo index.html
 $curso            = addslashes($_POST['course']);
@@ -16,7 +17,7 @@ $correo           = addslashes($_POST['email']);
 
 //Variables que se genera de manera automatica
 $fecha_inscripcion= date('Y-m-d H:i:s');
-$ip               = $_SERVER['REMOTE_SERVER'];
+$ip               = $_SERVER['REMOTE_ADDR'];
 $navegador        = $_SERVER['HTTP_USER_AGENT'];
 $ver_contrato     = '0';
 $fecha_contrato   = '1990-01-01';
@@ -31,7 +32,8 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   //Ejecucion de la consulta
-  $sql = "INSERT INTO inscritos VALUES ( '', $curso, $nombre_completo, $ci, $forma_pago, $fecha_nacimiento, $direccion, $celular, $correo, $fecha_inscripcion, $ip, $navegador, $ver_contrato, $fecha_contrato, $nro_contrato )";
+  $sql = "INSERT INTO inscritos VALUES ( '', '$curso', '$nombre_completo', '$ci', '$forma_pago', '$fecha_nacimiento', '$direccion', '$celular', '$correo', '$fecha_inscripcion', '$ip', '$navegador', '$ver_contrato', '$fecha_contrato', '$nro_contrato' );";
+echo $sql;
   $conn->exec($sql);
   echo "Exito de consulta";
 
