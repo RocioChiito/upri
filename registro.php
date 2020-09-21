@@ -1,8 +1,8 @@
 <?php
 //Datos de conexion
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "bett0";
+$password = "123";
 $dbname ="upri";
 
 //Variables enviados del archivo index.html
@@ -32,11 +32,13 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   //Ejecucion de la consulta
-  $sql = "INSERT INTO inscritos VALUES ( '', '$curso', '$nombre_completo', '$ci', '$forma_pago', '$fecha_nacimiento', '$direccion', '$celular', '$correo', '$fecha_inscripcion', '$ip', '$navegador', '$ver_contrato', '$fecha_contrato', '$nro_contrato' );";
-echo $sql;
+  $sql = "INSERT INTO inscritos (curso, nombre_completo, ci, forma_pago, fecha_nacimiento, direccion, celular, correo, fecha_inscripcion, ip, navegador, ver_contrato, fecha_contrato, nro_contrato) ".
+         " VALUES (  '$curso', '$nombre_completo', '$ci', '$forma_pago', '$fecha_nacimiento', '$direccion', '$celular', '$correo', '$fecha_inscripcion', '$ip', '$navegador', '$ver_contrato', '$fecha_contrato', '$nro_contrato' );";
+  //echo $sql;
   $conn->exec($sql);
-  echo "Exito de consulta";
+  echo "BIEN";
 
 } catch(PDOException $e) {
-  echo "Error de Conexion : " . $e->getMessage();
+  //echo "Error de Conexion : " . $e->getMessage();
+  echo "ERROR";
 }
