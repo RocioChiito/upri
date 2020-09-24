@@ -267,14 +267,12 @@
         var data = $('#form1').serialize();
 
         $.post(url, data, function(result, textStatus, xhr) {
-          if(result == "BIEN"){
+          //console.log();
+          if(result.length == 1000){
             alert("Tus datos fueron enviados correctamente, recibira un email con la confirmacion de sus isncripcion");
             $('#form1').trigger("reset");
           }else{
-            window.onerror=function(){
              alert('Error al registrar')
-             return true;
-            }
           }
         }).fail(function(esp){
           alert('Fallo el registro')
